@@ -1,0 +1,127 @@
+$def with (urlbase)
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello world</title>
+        <link href="$urlbase/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="$urlbase/res/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mainCtrl">
+            <div class="panel panel-primary deviceList">
+                <div class="panel-heading">Device (<label id="devCount"></label>)</div>
+                <div class="panel-body">
+                    <ul id="devList"></ul>
+                </div>
+            </div>
+            <div class="panel panel-primary downloadList">
+                <div class="panel-heading">Config</div>
+                <div class="panel-body">
+                    <button class="btn btn-primary">刷机</button>
+                    <button class="btn btn-primary">扫描ARFCN</button>
+                    <button class="btn btn-primary">关键字报警</button>
+                </div>
+            </div>
+            <div class="panel panel-primary arfcnList">
+                <div class="panel-heading">ARFCN</div>
+                <div class="panel-body">
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <th class="thid" width="60px">编号</th>
+                            <th>arfcn</th>
+                            <th width="80px">信号强度</th>
+                            <th width="60px">类型</th>
+                            <th width="155px">记录时间</th>
+                            <th width="80px">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="tdid">1</td>
+                            <td>65</td>
+                            <td>-50DB</td>
+                            <td>联通</td>
+                            <td>2012-02-02 18:25:36</td>
+                            <td><button class="btn btn-primary">嗅探</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="panel panel-primary smsList">
+                <div class="panel-heading">SMS</div>
+                <div class="panel-body">
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <th class="thid" width="60px">编号</th>
+                            <th width="120px">手机号码</th>
+                            <th width="120px">短信中心</th>
+                            <th>内容</th>
+                            <th width="60px">类型</th>
+                            <th width="155px">记录时间</th>
+                            <th width="80px">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="tdid">123</td>
+                            <td>13244556677</td>
+                            <td>8613880000008</td>
+                            <td>今晚哪里吃饭？</td>
+                            <td>上行</td>
+                            <td>2012-02-02 18:25:36</td>
+                            <td><button class="btn btn-danger">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tdid">123</td>
+                            <td>13244556677</td>
+                            <td>8613880000008</td>
+                            <td>今晚哪里吃饭？</td>
+                            <td>上行</td>
+                            <td>2012-02-02 18:25:36</td>
+                            <td><button class="btn btn-danger">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tdid">123</td>
+                            <td>13244556677</td>
+                            <td>8613880000008</td>
+                            <td>今晚哪里吃饭？</td>
+                            <td>上行</td>
+                            <td>2012-02-02 18:25:36</td>
+                            <td><button class="btn btn-danger">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tdid">123</td>
+                            <td>13244556677</td>
+                            <td>8613880000008</td>
+                            <td>今晚哪里吃饭？</td>
+                            <td>上行</td>
+                            <td>2012-02-02 18:25:36</td>
+                            <td><button class="btn btn-danger">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tdid">123</td>
+                            <td>13244556677</td>
+                            <td>8613880000008</td>
+                            <td>今晚哪里吃饭？</td>
+                            <td>上行</td>
+                            <td>2012-02-02 18:25:36</td>
+                            <td><button class="btn btn-danger">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td class="tdid">123</td>
+                            <td>13244556677</td>
+                            <td>8613880000008</td>
+                            <td>今晚哪里吃饭？</td>
+                            <td>上行</td>
+                            <td>2012-02-02 18:25:36</td>
+                            <td><button class="btn btn-danger">删除</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="$urlbase/res/js/jquery.min.js"></script>
+        <script src="$urlbase/bootstrap/js/bootstrap.min.js"></script>
+        <script src="$urlbase/res/js/index.js"></script>
+    </body>
+</html>

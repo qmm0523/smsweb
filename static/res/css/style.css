@@ -1,0 +1,27 @@
+body{background-color: #000;}
+.panel{border-color: #0e920b;background-color: #000;}
+.panel>.panel-heading{color: #0e920b;background-color: #111;border-bottom: #0e920b 1px solid;}
+.mainCtrl{padding-top: 20px;}
+.btn{padding: 3px 8px;}
+
+.deviceList .panel-body ul{list-style: none;padding: 0;margin: 0;}
+.deviceList .panel-body ul li{display: inline-block;margin: 0 2px;}
+.deviceList .panel-body ul li button{margin: 4px 0;}
+
+.downloadList .panel-body button{margin: 4px 2px;}
+
+.arfcnList{border-bottom: none;}
+.arfcnList .panel-body{padding: 0;}
+.arfcnList table{table-layout: fixed;width: 100%;}
+.arfcnList table th{color: #0e920b;border-left: #0e920b 1px solid;text-align: center;padding: 5px 0;border-bottom: #0e920b 1px solid;}
+.arfcnList table td{color: #0e920b;border-left: #0e920b 1px solid;text-align: center;padding: 5px 0;border-bottom: #0e920b 1px solid;}
+.arfcnList table .thid{border-left: none;}
+.arfcnList table .tdid{border-left: none;}
+
+.smsList{border-bottom: none;}
+.smsList .panel-body{padding: 0;}
+.smsList table{table-layout: fixed;width: 100%;}
+.smsList table th{color: #0e920b;border-left: #0e920b 1px solid;text-align: center;padding: 5px 0;border-bottom: #0e920b 1px solid;}
+.smsList table td{color: #0e920b;border-left: #0e920b 1px solid;text-align: center;padding: 5px 0;border-bottom: #0e920b 1px solid;}
+.smsList table .thid{border-left: none;}
+.smsList table .tdid{border-left: none;}
