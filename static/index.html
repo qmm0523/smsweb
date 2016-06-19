@@ -21,31 +21,29 @@ $def with (urlbase)
             <div class="panel panel-primary downloadList">
                 <div class="panel-heading">Config</div>
                 <div class="panel-body">
-                    <button class="btn btn-primary">刷机</button>
-                    <button class="btn btn-primary">扫描ARFCN</button>
+                    <button class="btn btn-primary" onclick="hacksms.download()">刷机</button>
+                    <button class="btn btn-primary" onclick="hacksms.killdev()">杀死进程</button>
+                    <button class="btn btn-primary" onclick="hacksms.readARFCN()">读取ARFCN</button>
+                    <button class="btn btn-primary" onclick="hacksms.scanARFCN(1)">快速扫描ARFCN</button>
+                    <button class="btn btn-primary" onclick="hacksms.scanARFCN(2)">智能扫描ARFCN</button>
                     <button class="btn btn-primary">关键字报警</button>
                 </div>
             </div>
             <div class="panel panel-primary arfcnList">
                 <div class="panel-heading">ARFCN</div>
                 <div class="panel-body">
-                    <table cellpadding="0" cellspacing="0">
-                        <tr>
-                            <th class="thid" width="60px">编号</th>
-                            <th>arfcn</th>
-                            <th width="80px">信号强度</th>
-                            <th width="60px">类型</th>
-                            <th width="155px">记录时间</th>
-                            <th width="80px">操作</th>
-                        </tr>
-                        <tr>
-                            <td class="tdid">1</td>
-                            <td>65</td>
-                            <td>-50DB</td>
-                            <td>联通</td>
-                            <td>2012-02-02 18:25:36</td>
-                            <td><button class="btn btn-primary">嗅探</button></td>
-                        </tr>
+                    <table cellpadding="0" cellspacing="0" id="arfcnList">
+                        <thead>
+                            <tr>
+                                <th class="thid" width="60px">编号</th>
+                                <th>arfcn</th>
+                                <th width="250px">记录时间</th>
+                                <th width="80px">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td colspan="4"><font color="red">未扫描</font></td></tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
