@@ -11,113 +11,16 @@ $def with (urlbase)
         <link href="$urlbase/res/css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container mainCtrl">
-            <div class="panel panel-primary deviceList">
-                <div class="panel-heading">Device (<label id="devCount"></label>)</div>
-                <div class="panel-body">
-                    <ul id="devList"></ul>
-                </div>
-            </div>
-            <div class="panel panel-primary downloadList">
-                <div class="panel-heading">Config</div>
-                <div class="panel-body">
-                    <button class="btn btn-primary" onclick="hacksms.download()">刷机</button>
-                    <button class="btn btn-primary" onclick="hacksms.killdev()">杀死进程</button>
-                    <button class="btn btn-primary" onclick="hacksms.readARFCN()">读取ARFCN</button>
-                    <button class="btn btn-primary" onclick="hacksms.scanARFCN(1)">快速扫描ARFCN</button>
-                    <button class="btn btn-primary" onclick="hacksms.scanARFCN(2)">智能扫描ARFCN</button>
-                    <button class="btn btn-primary">关键字报警</button>
-                </div>
-            </div>
-            <div class="panel panel-primary arfcnList">
-                <div class="panel-heading">ARFCN</div>
-                <div class="panel-body">
-                    <table cellpadding="0" cellspacing="0" id="arfcnList">
-                        <thead>
-                            <tr>
-                                <th class="thid" width="60px">编号</th>
-                                <th>arfcn</th>
-                                <th width="250px">记录时间</th>
-                                <th width="80px">操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td colspan="4"><font color="red">未扫描</font></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="panel panel-primary smsList">
-                <div class="panel-heading">SMS</div>
-                <div class="panel-body">
-                    <table cellpadding="0" cellspacing="0">
-                        <tr>
-                            <th class="thid" width="60px">编号</th>
-                            <th width="120px">手机号码</th>
-                            <th width="120px">短信中心</th>
-                            <th>内容</th>
-                            <th width="60px">类型</th>
-                            <th width="155px">记录时间</th>
-                            <th width="80px">操作</th>
-                        </tr>
-                        <tr>
-                            <td class="tdid">123</td>
-                            <td>13244556677</td>
-                            <td>8613880000008</td>
-                            <td>今晚哪里吃饭？</td>
-                            <td>上行</td>
-                            <td>2012-02-02 18:25:36</td>
-                            <td><button class="btn btn-danger">删除</button></td>
-                        </tr>
-                        <tr>
-                            <td class="tdid">123</td>
-                            <td>13244556677</td>
-                            <td>8613880000008</td>
-                            <td>今晚哪里吃饭？</td>
-                            <td>上行</td>
-                            <td>2012-02-02 18:25:36</td>
-                            <td><button class="btn btn-danger">删除</button></td>
-                        </tr>
-                        <tr>
-                            <td class="tdid">123</td>
-                            <td>13244556677</td>
-                            <td>8613880000008</td>
-                            <td>今晚哪里吃饭？</td>
-                            <td>上行</td>
-                            <td>2012-02-02 18:25:36</td>
-                            <td><button class="btn btn-danger">删除</button></td>
-                        </tr>
-                        <tr>
-                            <td class="tdid">123</td>
-                            <td>13244556677</td>
-                            <td>8613880000008</td>
-                            <td>今晚哪里吃饭？</td>
-                            <td>上行</td>
-                            <td>2012-02-02 18:25:36</td>
-                            <td><button class="btn btn-danger">删除</button></td>
-                        </tr>
-                        <tr>
-                            <td class="tdid">123</td>
-                            <td>13244556677</td>
-                            <td>8613880000008</td>
-                            <td>今晚哪里吃饭？</td>
-                            <td>上行</td>
-                            <td>2012-02-02 18:25:36</td>
-                            <td><button class="btn btn-danger">删除</button></td>
-                        </tr>
-                        <tr>
-                            <td class="tdid">123</td>
-                            <td>13244556677</td>
-                            <td>8613880000008</td>
-                            <td>今晚哪里吃饭？</td>
-                            <td>上行</td>
-                            <td>2012-02-02 18:25:36</td>
-                            <td><button class="btn btn-danger">删除</button></td>
-                        </tr>
-                    </table>
-                </div>
+        <div class="container" style="padding-top:30px;">
+            <div class="col-12-md">
+                <button class="btn btn-danger" style="margin-left:5px" onclick="hacksms.downloadAll()">一键刷机</button>
+                <button class="btn btn-danger" style="margin-left:5px" onclick="hacksms.scanAll()">一键扫描</button>
+                <button class="btn btn-danger" style="margin-left:5px" onclick="hacksms.killdev()">杀死所有进程</button>
+                <button class="btn btn-danger" style="margin-left:5px" onclick="hacksms.resetPower()">重置所有电源</button>
             </div>
         </div>
+        <div class="container device" style="padding-top:20px;"></div>
+        <div class="loading"><p>正在执行，请耐心等待...</p></div>
         <script src="$urlbase/res/js/jquery.min.js"></script>
         <script src="$urlbase/bootstrap/js/bootstrap.min.js"></script>
         <script src="$urlbase/res/js/index.js"></script>
